@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Temp Converter</title>
+</head>
+<body>
+  <div>
+    <h1>Temperature Converter</h1>
+    <p>Convert the temperature from Celcius to Fahrenheit or Fahrenheit to Celcius</p>
+    <br>
+  </div>
+  <div id="display-container">
+    <div id="input-container">
+      <h4>Input temperature</h4>
+      <input type="text" id="temp">
+      <div id="unit">
+        <h5>Select Unit</h5>
+        <label for="celcius">C</label>
+        <input type="radio" id="celcius"><br>
+        <label for="fahrenheit">F</label>
+        <input type="radio" id="fahrenheit">
+      </div>
+      <br><br>
+      <a id="convert-btn">convert</a>
+    </div>
+    <div id="converted-container">
+      <h4>Converted temperature</h4>
+      <div id="converted-temp"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>
